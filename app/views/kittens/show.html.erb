@@ -1,0 +1,6 @@
+<%= render 'shared/flash' %>
+<p>name: <%= @kitten.name %></p>
+<p>age: <%= @kitten.age %></p>
+<p>cuteness: <%= @kitten.cuteness %></p>
+<p>softness: <%= @kitten.softness %></p>
+<p><%= link_to "Delete", @kitten, method: :delete, date: {confirm: "Are you sure?"} %></p>
